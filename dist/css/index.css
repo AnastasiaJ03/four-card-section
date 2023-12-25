@@ -1,0 +1,95 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  max-width: 1470px;
+  margin: 0 auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background: hsl(0, 0%, 98%);
+}
+
+.features {
+  padding: 80px 0px;
+}
+
+.text {
+  max-width: 550px;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.subtitle {
+  font-weight: 200;
+}
+
+.lead {
+  color: hsl(229, 6%, 66%);
+  margin-top: 10px;
+  margin-bottom: 50px;
+}
+
+.cards {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 25px;
+}
+.cards-duo .card:first-child {
+  margin-bottom: 25px;
+}
+
+.card {
+  max-width: 400px;
+  background: #fff;
+  padding: 40px 30px;
+  border-radius: 12px;
+  box-shadow: 5px 15px 15px rgba(84, 158, 242, 0.1);
+  position: relative;
+  overflow: hidden;
+}
+.card::before {
+  content: "";
+  width: 100%;
+  height: 5px;
+  background: hsl(180, 62%, 55%);
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.card__text {
+  color: hsl(229, 6%, 66%);
+  margin-top: 10px;
+  margin-bottom: 15px;
+}
+.card__icon img {
+  margin-left: auto;
+  display: block;
+}
+
+.card-red::before {
+  background: hsl(0, 78%, 62%);
+}
+
+.card-yellow::before {
+  background: hsl(34, 97%, 64%);
+}
+
+.card-blue::before {
+  background: hsl(212, 86%, 64%);
+}
+
+@media (max-width: 1200px) {
+  .cards {
+    flex-direction: column;
+  }
+}
+
+/*# sourceMappingURL=index.css.map */
